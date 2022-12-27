@@ -17,7 +17,7 @@ public:
 	void display() {
 		cout << this->real << '\t' << this->image << endl;
 	}
-	//ÓÑÔª
+	//å‹å…ƒ
 	/*
 	friend complex operator +(complex A, complex B)
 	{
@@ -33,7 +33,7 @@ public:
 	}
 	*/
 
-	//³ÉÔ±º¯Êı
+	//æˆå‘˜å‡½æ•°
 	complex operator +(complex A);
 	complex operator ++();
 	complex operator ++(int);
@@ -78,7 +78,7 @@ public:
 	point(int x = 0, int y = 0) {
 		this->x = x;
 		this->y = y;
-		cout << "point()±»µ÷ÓÃ" << endl;
+		cout << "point()è¢«è°ƒç”¨" << endl;
 	}
 	virtual double area() {
 		return 0.0;
@@ -87,7 +87,7 @@ public:
 		cout << x << '\t' << y << endl;
 	}
 	virtual ~point() {
-		cout << "~point()±»µ÷ÓÃ" << endl;
+		cout << "~point()è¢«è°ƒç”¨" << endl;
 	}
 };
 
@@ -98,7 +98,7 @@ public:
 public:
 	circle(int x, int y, int r = 0) :point(x, y) {
 		this->r = r;
-		cout << "circle()±»µ÷ÓÃ" << endl;
+		cout << "circle()è¢«è°ƒç”¨" << endl;
 	}
 	virtual double area() {
 		return 3.14 * r * r;
@@ -107,7 +107,7 @@ public:
 		cout << r << endl;
 	}
 	~circle() {
-		cout << "~circle()±»µ÷ÓÃ" << endl;
+		cout << "~circle()è¢«è°ƒç”¨" << endl;
 	}
 };
 
