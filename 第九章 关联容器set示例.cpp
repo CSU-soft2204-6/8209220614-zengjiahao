@@ -4,12 +4,12 @@
 using namespace std;
 
 template<class T>
-void print(set<T> &set_con)    //Êä³ösetÖĞËùÓĞÔªËØ
+void print(set<T> &set_con)    //è¾“å‡ºsetä¸­æ‰€æœ‰å…ƒç´ 
 {
   if(set_con.empty())
      cout<<"Container is empty!"<<endl;
   else {
-	  typename set<T>::iterator it;    //¶¨Òåµü´úÆ÷
+	  typename set<T>::iterator it;    //å®šä¹‰è¿­ä»£å™¨
 for(it=set_con.begin(); it!=set_con.end();it++)
 {
 	     cout<<*it<<" ";
@@ -26,17 +26,17 @@ int main()
   cout<<"All student:"<<endl;
   print(str_set);
   cout<<"After insert:"<<endl;
-  str_set.insert("DingLong");    //²åÈëÊı¾İÔªËØ
+  str_set.insert("DingLong");    //æ’å…¥æ•°æ®å…ƒç´ 
   print(str_set);
   cout<<"After erase:"<<endl;
-  str_set.erase("ChenHailing");  //É¾³ıÊı¾İÔªËØ
+  str_set.erase("ChenHailing");  //åˆ é™¤æ•°æ®å…ƒç´ 
   print(str_set);
 
   string search;
   set<string>::iterator it;
   cout<<"Please input the student name for searching:"<<endl;
   cin>>search;
-  it=str_set.find(search);     //²éÕÒÊı¾İÔªËØ
+  it=str_set.find(search);     //æŸ¥æ‰¾æ•°æ®å…ƒç´ 
   if(it==str_set.end())
 	  cout<<"The "<<search<<" did not find!"<<endl;
   else
