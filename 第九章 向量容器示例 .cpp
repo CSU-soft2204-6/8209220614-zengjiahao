@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int main() {
-	vector<double>  scorevector;   //创建向量
+	vector<double>  scorevector;   //鍒涘缓鍚戦噺
 	double max, temp;
 	int i;
 	cout << "Input -1 to stop:" << endl;
