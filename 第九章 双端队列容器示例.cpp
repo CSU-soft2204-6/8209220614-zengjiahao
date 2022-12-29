@@ -2,7 +2,7 @@
 #include<deque>
 using namespace std;
 template<class T>
-void print(T &deq, char *str) //ÏÔÊ¾Êä³öË«¶Ë¶ÓÁĞÖĞµÄËùÓĞÔªËØ
+void print(T &deq, char *str) //æ˜¾ç¤ºè¾“å‡ºåŒç«¯é˜Ÿåˆ—ä¸­çš„æ‰€æœ‰å…ƒç´ 
 {
 	typename T::iterator it;
 	cout<<"The elements of "<<str<<": ";
@@ -12,25 +12,25 @@ void print(T &deq, char *str) //ÏÔÊ¾Êä³öË«¶Ë¶ÓÁĞÖĞµÄËùÓĞÔªËØ
 }
 
 int main() {
-    deque<char> deque_A;  //´´½¨Ë«¶Ë¶ÓÁĞ
-	deque_A.push_back('c');  //´Ó¶ÓÎ²½ø¶ÓÁĞ
+    deque<char> deque_A;  //åˆ›å»ºåŒç«¯é˜Ÿåˆ—
+	deque_A.push_back('c');  //ä»é˜Ÿå°¾è¿›é˜Ÿåˆ—
 	deque_A.push_back('d');
 
-	deque_A.push_front('b'); //´Ó¶ÓÍ·½ø¶ÓÁĞ
+	deque_A.push_front('b'); //ä»é˜Ÿå¤´è¿›é˜Ÿåˆ—
 	deque_A.push_front('a');
 	print(deque_A,"deque_A");
-    	//ÏÔÊ¾¶ÓÍ·ÔªËØ
+    	//æ˜¾ç¤ºé˜Ÿå¤´å…ƒç´ 
 	cout<<"The first element of deque_A is "<<deque_A.front()
 <<endl;
-//ÏÔÊ¾¶ÓÎ²ÔªËØ
+//æ˜¾ç¤ºé˜Ÿå°¾å…ƒç´ 
     	cout<<"The last element of deque_A is "<<deque_A.back()
 <<endl;
-    	deque_A.insert(deque_A.begin(),'x');   //ÔÚ¶ÓÍ·²åÈëÔªËØ
-    	deque_A.insert(deque_A.end(),'z');     //ÔÚ¶ÓÎ²²åÈëÔªËØ
+    	deque_A.insert(deque_A.begin(),'x');   //åœ¨é˜Ÿå¤´æ’å…¥å…ƒç´ 
+    	deque_A.insert(deque_A.end(),'z');     //åœ¨é˜Ÿå°¾æ’å…¥å…ƒç´ 
 	print(deque_A,"deque_A");
-    	deque_A.pop_front();           //´Ó¶ÓÍ·³ö¶ÓÁĞ£¨É¾³ıÔªËØ£©
+    	deque_A.pop_front();           //ä»é˜Ÿå¤´å‡ºé˜Ÿåˆ—ï¼ˆåˆ é™¤å…ƒç´ ï¼‰
 	print(deque_A,"deque_A");
-	deque_A.pop_back();            //´Ó¶ÓÎ²³ö¶ÓÁĞ£¨É¾³ıÔªËØ£©
+	deque_A.pop_back();            //ä»é˜Ÿå°¾å‡ºé˜Ÿåˆ—ï¼ˆåˆ é™¤å…ƒç´ ï¼‰
 	print(deque_A,"deque_A");
    	return 0;
 }
