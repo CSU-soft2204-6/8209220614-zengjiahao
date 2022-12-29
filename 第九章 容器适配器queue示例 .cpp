@@ -8,13 +8,13 @@ void print(T &q)
 {
 	while(!q.empty()) {
 	  cout<<q.front()<<" ";
-      q.pop();       //³ö¶ÓÁĞ
+      q.pop();       //å‡ºé˜Ÿåˆ—
 	}
    cout<<endl;
 }
 
 int main() {
-  queue< int,list<int> > list_q;  //ÈİÆ÷ÊÊÅäÆ÷×ª»»Ë³ĞòÈİÆ÷
+  queue< int,list<int> > list_q;  //å®¹å™¨é€‚é…å™¨è½¬æ¢é¡ºåºå®¹å™¨
   for(int i=1;i<=4;i++)
      list_q.push(i);
 
